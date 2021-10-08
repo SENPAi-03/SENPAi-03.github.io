@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SENPAi •Facebook</title>
+  <script src="https://kit.fontawesome.com/900ae9fbb9.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class="logo">
+    <a href="#" data-action="home">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook logo from wikimedia">
+    </a>
+  </div>
+  <div class="search-container">
+    <div class="container">
+      <div class="form-control">
+        <form action="" autocomplete="off">
+          <div class="search-wrapper">
+            <label for="search">
+              <i class="icon fa fa-arrow-left"></i>
+              <i class="icon fa fa-search"></i><input type="text" class="search-box" id="search" placeholder="Search Facebook">
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="suggestion">
+        <div class="recent-searches">
+          <p>Recent Searches</p>
+          <button class="edit-recent-search">Edit</button>
+        </div>
+        <ul class="search-result">
+          <li class="search-result-item">
+            <span><i class="fa fa-clock-o"></i></span>
+            <p>Hello World</p>
+            <span>x</span>
+          </li>
+          <li class="search-result-item">
+            <span><i class="fa fa-clock-o"></i></span>
+            <p>Mark Zuckerberg</p>
+            <span>x</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="main-nav-container">
+    <ul class="main-nav">
+      <li class="active">
+        <a href="#" data-action="home" data-tooltip="Home"><i class="fa fa-home"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Watch"><i class="fa fa-tv"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Marketplace"><i class="fas fa-store"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Groups"><i class="fa fa-user-circle-o"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Gaming"><i class="fa fa-trello"></i></a>
+      </li>
+      <li>
+        <a href="#" id="toggle-bookmarks" data-tooltip="More"><i class="fa fa-bars"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="profile-controls-container">
+    <ul class="profile-controls">
+      <li>
+        <a href="#" data-tooltip="Create"><i class="fas fa-plus"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Menu"><i class="fas fa-th"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Notifications"><i class="fas fa-bell"></i></a>
+        <span class="notification-badge">8</span>
+      </li>
+      <li>
+        <a href="#" data-tooltip="Account" data-popup="account"><i class="fas fa-caret-down"></i>
+        </a>
+        <div class="popup" id="account-popup">
+          <ul class="popup-menu">
+            <li class="separator">
+              <div class="menu-item">
+                <img src="https://source.unsplash.com/random/99X99" class="profile-pic" alt="">
+                <div class="account-info">
+                  <p>SENPAi</p>
+                  <span>See your profile</span>
+                </div>
+              </div>
+            </li>
+            <li class="separator">
+              <div class="menu-item">
+                <i class="fas fa-comment-alt menu-icon"></i>
+                <div>
+                  <p>Give Feedback</p>
+                  <span>Help us improve the new Facebook</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="fas fa-cog menu-icon"></i>
+                <p>Settings & Privacy</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="fas fa-moon menu-icon"></i>
+                <p>Display & Accessibility</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="fas fa-question-circle menu-icon"></i>
+                <p>Help & Support</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="fas fa-sign-out-alt menu-icon"></i>
+                <p>Logout</p>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+          </ul>
+          <div class="copyrights">
+            <ul>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>Advertising</li>
+              <li>Ad Choices</li>
+              <li>Cookies</li>
+              <li>More</li>
+              <li>Facebook © 2021</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>
+<main>
+  <div class="left-nav scroll-on-hover">
+    <ul>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content">
+            <img class="profile-pic" src="https://source.unsplash.com/random/99X99" alt="Profile pic">
+            <p>SENPAi</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fas fa-user-friends"></i>
+            <p>Friends</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fas fa-cloud-sun"></i>
+            <p>Weather</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fas fa-landmark"></i>
+            <p>Town Hall</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fa fa-gamepad"></i>
+            <p>Play Games</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fas fa-store"></i>
+            <p>Marketplace</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fa fa-youtube-play"></i>
+            <p>Watch</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><i class="fa fa-calendar"></i>
+            <p>Events</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <div class="nav-link-content"><span class="fa fa-chevron-down list-btn"></span>
+            <p>See More</p>
+          </div>
+        </a>
+      </li>
+      <li class="separator"></li>
+    </ul>
+    <div class="shortcuts">
+      <div class="shortcuts-header">
+        <p>Your Shortcuts</p>
+        <button class="list-item-btn hidden">Edit</button>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <img class="group-pic" src="https://source.unsplash.com/random/49X49" alt="Profile pic">
+              <p>Stay Hungry. Stay Foolish.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyrights">
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Advertising</li>
+        <li>Ad Choices</li>
+        <li>Cookies</li>
+        <li>More</li>
+        <li>Facebook © 2021</li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="story-container">
+      <div class="story-list">
+        <div class="story create">
+          <div class="story-content">
+            <a href="#">
+              <div>
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+              </div>
+              <div class="overlay"></div>
+              <div class="create-story">
+                <i class="fa fa-plus"></i>
+                <span>Create Story</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="story user-story">
+          <a href="#">
+            <img src="https://source.unsplash.com/random/250×250" alt="">
+            <img class="user-pic" src="https://source.unsplash.com/random/150×150" alt="">
+            <p class="story-title">Let's make front-end simple</p>
+            <div class="overlay"></div>
+          </a>
+        </div>
+        <div class="story"></div>
+        <div class="story"></div>
+        <div class="story"></div>
+      </div>
+      <button data-tooltip="See All Stories"><i class="fa fa-arrow-right"></i></button>
+    </div>
+    <div class="create-post post">
+      <div class="post-info">
+        <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895469986934566962/SENPAi.gif" alt="Profile pic">
+        <input class="text-input" type="text" placeholder="What's on your mind, SENPAi?">
+      </div>
+      <div class="post-type">
+        <div class="video">
+          <i class="fa fa-video-camera"></i>
+          <span>Live Video</span>
+        </div>
+        <div class="photo">
+          <i class="fa fa-file-image-o"></i>
+          <span>Photo/Video</span>
+        </div>
+        <div class="feeling">
+          <i class="far fa-laugh"></i>
+          <span>Feeling/Activity</span>
+        </div>
+      </div>
+    </div>
+    <div class="post">
+      <div class="info">
+        <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895469986934566962/SENPAi.gif " alt="SENPAi's Avatar">
+        <div class="user">
+          <p>SENPAi</p>
+          <span>Oct 10 at 7 PM</span>
+        </div>
+        <button data-popup="post"><i class="fa fa-ellipsis-h"></i></button>
+        <div class="popup menu" id="post-popup">
+          <ul class="popup-menu">
+            <li class="separator">
+              <div class="menu-item">
+                <i class="far fa-bookmark"></i>
+                <div>
+                  <p>Save Post</p>
+                  <span>Add this to your saved items.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="far fa-edit"></i>
+                <p>View edit history</p>
+              </div>
+            </li>
+            <li class="separator">
+              <div class="menu-item">
+                <i class="far fa-bell"></i>
+                <p>Turn off notifications</p>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="far fa-window-close"></i>
+                <div>
+                  <p>Hide post</p>
+                  <span>See fewer posts like this</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="far fa-minus-square"></i>
+                <div>
+                  <p>Unfollow SENPAi</p>
+                  <span>Stop seeing posts but stay friends</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <i class="far fa-comment-alt"></i>
+                <div>
+                  <p>Find support or report post</p>
+                  <span>I'm concerned about this post</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="post-content">
+        <p>We moved to discord</br>There's no Mark Zuckerberg among us</br><br/>#discord_our_home</p>
+        <img src="https://www.worldstockmarket.net/wp-content/uploads/2021/05/1620931229_Major-Discord-Update-Paid-Channels-Discussions-and-New-Design.jpg" alt="Discord new Way to Talk">
+      </div>
+      <div class="likes-info">
+        <div class="icons">
+          <i class="fa fa-thumbs-o-up"></i>
+          <i class="fa fa-heart-o"></i>
+          <a href="#">18</a>
+        </div>
+        <div>
+          <a href="#">49 Comments</a>
+          <a href="#">28 Shares</a>
+        </div>
+      </div>
+      <div class="actions">
+        <a href="#" class="icons-wrapper">
+          <i class="fa fa-thumbs-o-up"></i>Like
+          <div class="emoticons animated">
+            <img src="https://www.animoticons.com/files/japanese-emoticons/bunhead-smiley-faces/40.gif" alt="" data-tooltip="Love" data-position="top">
+            <img src="https://www.animoticons.com/files/emotions/happy-smiley-faces/59.gif" alt="" data-tooltip="HaHa" data-position="top">
+            <img src="https://www.animoticons.com/files/emotions/bored-smiley-faces/10.gif" alt="" data-tooltip="Bored" data-position="top">
+            <img src="https://www.animoticons.com/files/emotions/sad-smiley-faces/2.gif" alt="" data-tooltip="Sad" data-position="top">
+            <img src="https://www.animoticons.com/files/emotions/angry-smiley-faces/11.gif" alt="" data-tooltip="Angry" data-position="top">
+          </div>
+        </a>
+        <a href="#"><i class="fa fa-comment-o"></i>Comment</a>
+        <a href="#"><i class="fa fa-share"></i>Share</a>
+      </div>
+      <div class="comments">
+        <ul>
+          <li>
+            <div class="pic-container">
+              <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895469986934566962/SENPAi.gif" alt="Profile pic">
+            </div>
+            <input class="text-input" type="text" placeholder="Write a comment...">
+            <div class="comment-type">
+              <i class="fa fa-smile-o" data-tooltip="Insert an emoji" data-position="top"></i>
+              <i class="fa fa-camera" data-tooltip="Attach a photo or video" data-position="top"></i>
+              <i class="fa fa-picture-o" data-tooltip="Comment with a GIF" data-position="top"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="post people-suggestion">
+      <div class="info">
+        <p class="title">People you may know</p>
+        <button data-popup="suggestion"><i class="fa fa-ellipsis-h"></i></button>
+        <div class="popup menu" id="suggestion-popup">
+          <ul class="popup-menu">
+            <li class="separator">
+              <div class="menu-item">
+                <i class="far fa-window-close"></i>
+                <div>
+                  <p>Hide People You May Know</p>
+                  <span>See less of People You May Know</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel">
+        <ul>
+          <li class="carousel-item">
+            <div class="request-info">
+              <div class="placeholder" style="height: 150px;">
+
+              </div>
+              <div class="connection">
+                <p class="header-title">Ellsworth Summit</p>
+                <div>
+                  <div class="mutual-friends">
+                    <img src="https://source.unsplash.com/random/30X30" alt="">
+                    <img src="https://source.unsplash.com/random/31X31" alt="">
+                  </div>
+                  <span>4 Mutual Friends</span>
+                </div>
+              </div>
+              <div class="connection-footer">
+                <button class="secondary-btn blue-btn"><i class="fas fa-user-plus"></i> Add Friend</button>
+                <button class="secondary-btn grey-btn">Remove</button>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <div class="request-info">
+              <div class="placeholder" style="height: 150px;">
+
+              </div>
+              <div class="connection">
+                <p class="header-title">Glenna Reichert</p>
+                <div>
+                  <div class="mutual-friends">
+                    <img src="https://source.unsplash.com/random/30X30" alt="">
+                    <img src="https://source.unsplash.com/random/31X31" alt="">
+                  </div>
+                  <span>1 Mutual Friends</span>
+                </div>
+              </div>
+              <div class="connection-footer">
+                <button class="secondary-btn blue-btn"><i class="fas fa-user-plus"></i> Add Friend</button>
+                <button class="secondary-btn grey-btn">Remove</button>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <div class="request-info">
+              <div class="placeholder" style="height: 150px;">
+
+              </div>
+              <div class="connection">
+                <p class="header-title">Abernathy Group</p>
+                <div>
+                  <div class="mutual-friends">
+                    <img src="https://source.unsplash.com/random/30X30" alt="">
+                    <img src="https://source.unsplash.com/random/31X31" alt="">
+                  </div>
+                  <span>4 Mutual Friends</span>
+                </div>
+              </div>
+              <div class="connection-footer">
+                <button class="secondary-btn blue-btn"><i class="fas fa-user-plus"></i> Add Friend</button>
+                <button class="secondary-btn grey-btn">Remove</button>
+              </div>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <div class="request-info">
+              <div class="placeholder" style="height: 150px;">
+
+              </div>
+              <div class="connection">
+                <p class="header-title">Patricia Lebsack</p>
+                <div>
+                  <div class="mutual-friends">
+                    <img src="https://source.unsplash.com/random/30X30" alt="">
+                    <img src="https://source.unsplash.com/random/31X31" alt="">
+                  </div>
+                  <span>5 Mutual Friends</span>
+                </div>
+              </div>
+              <div class="connection-footer">
+                <button class="secondary-btn blue-btn"><i class="fas fa-user-plus"></i> Add Friend</button>
+                <button class="secondary-btn grey-btn">Remove</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="fa-btn"><span class="fa fa-chevron-left"></span></button>
+        <button class="fa-btn"><span class="fa fa-chevron-right"></span></button>
+      </div>
+      <div class="footer">
+        <button class="secondary-btn">See All</button>
+      </div>
+    </div>
+    <div class="post">
+      <div class="info">
+        <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895790924351832094/img_1_1633643470180.jpg" alt="Profile pic">
+        <div class="user">
+          <p>Mark Zuckerberg</p>
+          <span>Oct 9 at 5:59 PM</span>
+        </div>
+        <button><i class="fa fa-ellipsis-h"></i></button>
+      </div>
+      <div class="post-content">
+        <p>Facebook, Instagram, WhatsApp and Messenger are coming back online now. Sorry for the disruption today -- I know how much you rely on our services to stay connected with the people you care about..</p>
+        <img src="https://media.discordapp.net/attachments/882026542362947584/895786909849235476/FACTS.jpg" alt="Lizards Everywhere 🦎">
+      </div>
+      <div class="likes-info">
+        <div class="icons">
+          <i class="fa fa-thumbs-o-up"></i>
+          <i class="fa fa-heart-o"></i>
+          <a href="#">3,3M</a>
+        </div>
+        <div>
+          <a href="#">850,294 Comments</a>
+          <a href="#">448,104 Shares</a>
+        </div>
+      </div>
+      <div class="actions">
+        <a href="#" class="icons-wrapper">
+          <i class="fa fa-thumbs-o-up"></i>Like
+          <div class="emoticons">
+            <i class="fas fa-thumbs-up" data-tooltip="Like" data-position="top-pad"></i>
+            <i class="fas fa-heart" data-tooltip="Love" data-position="top-pad"></i>
+            <i class="fas fa-smile" data-tooltip="HaHa" data-position="top-pad"></i>
+            <i class="fas fa-laugh" data-tooltip="Wow" data-position="top-pad"></i>
+            <i class="fas fa-sad-tear" data-tooltip="Sad" data-position="top-pad"></i>
+            <i class="fas fa-angry" data-tooltip="Angry" data-position="top-pad"></i>
+          </div>
+        </a>
+        <a href="#"><i class="fa fa-comment-o"></i>Comment</a>
+        <a href="#"><i class="fa fa-share"></i>Share</a>
+      </div>
+      <div class="comments">
+        <ul>
+          <li>
+            <div class="pic-container">
+              <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895793297556144188/img_1_1633644141763.jpg" alt="Profile pic">
+            </div>
+            <div class="reply-container">
+              <div class="reply-content">
+                <span>Sabrina Terence</span>
+                <p>It's so scary, how all people felt without fb/ig/whatsapp, the day when the earth 🌎 stood still 😂</p>
+                <div class="reply-reactions icons">
+                  <i class="fa fa-thumbs-o-up"></i>
+                  <i class="fa fa-heart-o"></i>
+                  <a href="#">217,297</a>
+                </div>
+              </div>
+              <div class="reply-action">
+                <div><a href="#">Like</a></div>
+                <div><span>.</span><a href="#">Reply</a></div>
+                <div><span>.</span><a href="#">1h</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="pic-container">
+              <img class="profile-pic" src="https://media.discordapp.net/attachments/882026542362947584/895469986934566962/SENPAi.gif" alt="Profile pic">
+            </div>
+            <input class="text-input" type="text" placeholder="Write a comment...">
+            <div class="comment-type">
+              <i class="fa fa-smile-o" data-tooltip="Insert an emoji" data-position="top"></i>
+              <i class="fa fa-camera" data-tooltip="Attach a photo or video" data-position="top"></i>
+              <i class="fa fa-picture-o" data-tooltip="Comment with a GIF" data-position="top"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="post error">
+      <i class="fas fa-tools load-error-icon"></i>
+      <p class="title">Something Went Wrong</p>
+      <p class="description">This may be because of a technical error that we're working to get fixed. Try reloading this page.</p>
+      <button class="secondary-btn reload-btn">Reload Page</button>
+    </div>
+  </div>
+  <div class="contacts-container scroll-on-hover">
+    <div>
+      <div class="shortcuts-header">
+        <p>Sponsored</p>
+      </div>
+      <ul class="sponsored">
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <img class="sponsored-pic" src="https://source.unsplash.com/random/149X149" alt="Profile pic">
+              <div>
+                <p class="title">Start 1 Month free</p>
+                <p class="ad-link">mail.yahoo.com</p>
+              </div>
+              <button><span class="fa fa-ellipsis-h"></span></button>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <img class="sponsored-pic" src="https://source.unsplash.com/random/150X150" alt="Profile pic">
+              <div>
+                <p class="title">Build, test, and discover front-end code</p>
+                <p class="ad-link">codepen.io</p>
+              </div>
+              <button><span class="fa fa-ellipsis-h"></span></button>
+            </div>
+          </a>
+        </li>
+        <li class="separator"></li>
+      </ul>
+    </div>
+    <div>
+      <div class="shortcuts-header">
+        <p>Contacts</p>
+        <div class="list-item-actions">
+          <button class="list-item-btn" data-tooltip="Search by name or group" data-position="left"><i class="fa fa-search"></i></button>
+          <button class="list-item-btn" data-tooltip="Options" data-position="left"><i class="fa fa-ellipsis-h"></i></button>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/49X49" alt="Profile pic">
+              </div>
+              <p>Leanne Graham</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/50X50" alt="Profile pic">
+              </div>
+              <p>Ervin Howell</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/51X51" alt="Profile pic">
+              </div>
+              <p>Clementine Bauch</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/52X52" alt="Profile pic">
+              </div>
+              <p>Patricia Lebsack</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/53X53" alt="Profile pic">
+              </div>
+              <p>Chelsey Dietrich</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/54X54" alt="Profile pic">
+              </div>
+              <p>Dennis Schulist</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content">
+              <div class="pic-container">
+                <img class="profile-pic" src="https://source.unsplash.com/random/55X55" alt="Profile pic">
+              </div>
+              <p>Kurtis Weissnat</p>
+            </div>
+          </a>
+          <div></div>
+        </li>
+        <li class="separator"></li>
+      </ul>
+    </div>
+    <div class="shortcuts">
+      <div class="shortcuts-header">
+        <p>Group Conversations</p>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="nav-link">
+            <div class="nav-link-content"><span class="fa fa-plus list-btn"></span>
+              <p>Create New Group</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="floating-btns">
+    <button id="new-message" data-tooltip="New Message" data-position="left"><i class="far fa-edit"></i></button>
+    <button id="theme" data-tooltip="Change theme" data-position="left"><i class="fas fa-moon"></i></button>
+  </div>
+</main>
+<div id="tooltip" />
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
